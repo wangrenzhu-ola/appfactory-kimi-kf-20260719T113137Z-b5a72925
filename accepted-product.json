@@ -1,0 +1,11 @@
+{
+  "product_name": "CarbLens.app",
+  "product_type": "com.apple.product-type.application",
+  "scheme_name": "CarbLens",
+  "scheme_ref": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/CarbLens.xcodeproj/xcshareddata/xcschemes/CarbLens.xcscheme",
+  "sources_phase_id": "DA90017E7B2995913B526B45",
+  "sources_phase_sha256": "21d6f33ab160609abaea557e6ff0b80cd41dbab3a394464bb66237e6c753d3bf",
+  "target_id": "71FA53B871E58AB8BA0C033C",
+  "target_name": "CarbLens",
+  "xcodeproj_ref": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/CarbLens.xcodeproj"
+}
