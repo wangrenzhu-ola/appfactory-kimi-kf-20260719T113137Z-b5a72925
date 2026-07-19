@@ -1,0 +1,42 @@
+name: CarbLens
+options:
+  bundleIdPrefix: com.carblens
+  createIntermediateGroups: true
+  deploymentTarget:
+    iOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "14.0"
+targets:
+  CarbLens:
+    type: application
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: Sources
+      - path: Assets.xcassets
+      - path: PrivacyInfo.xcprivacy
+    info:
+      path: Support/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.carblens.app
+        PRODUCT_NAME: CarbLens
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: NO
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        IPHONEOS_DEPLOYMENT_TARGET: "14.0"
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
+schemes:
+  CarbLens:
+    build:
+      targets:
+        CarbLens: all
+    run:
+      config: Debug
+    test:
+      config: Debug

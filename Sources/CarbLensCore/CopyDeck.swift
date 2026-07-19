@@ -166,7 +166,7 @@ public enum Copy {
         public static let cameraHeading = "Camera use"
         public static let cameraBody = "The camera is only used to capture meals you choose to log. CarbLens never records video or accesses your photo library without you picking a photo."
         public static let storageHeading = "Where data lives"
-        public static let storageBody = "Your meal log, budget and settings are stored on this device. Nothing is uploaded unless you explicitly export it."
+        public static let storageBody = "Your meal log, budget and settings are stored on this device. During an estimate, only derived food candidates — never your photo — are sent to the estimation service. Nothing else leaves this device unless you explicitly export it."
         public static let disclaimerHeading = "Not medical advice"
         public static let disclaimerBody = "CarbLens provides informational carb and glucose-impact estimates only. It does not provide medical advice, diagnosis, treatment, or insulin dosing guidance. Always follow your clinician's plan."
         public static let deleteHeading = "Delete everything"

@@ -16,6 +16,13 @@
     "swift-dependencies": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/CopyDeck.swiftdeps",
     "diagnostics": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/CopyDeck.dia"
   },
+  "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/EstimateRefiner.swift": {
+    "dependencies": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/EstimateRefiner.d",
+    "object": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/EstimateRefiner.swift.o",
+    "swiftmodule": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/EstimateRefiner~partial.swiftmodule",
+    "swift-dependencies": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/EstimateRefiner.swiftdeps",
+    "diagnostics": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/EstimateRefiner.dia"
+  },
   "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/FoodDatabase.swift": {
     "dependencies": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/FoodDatabase.d",
     "object": "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/FoodDatabase.swift.o",

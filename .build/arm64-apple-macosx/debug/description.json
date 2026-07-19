@@ -36,6 +36,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/EstimateRefiner.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/FoodDatabase.swift"
         },
         {
@@ -69,6 +73,7 @@
       "objects" : [
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/AnalysisEngine.swift.o",
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/CopyDeck.swift.o",
+        "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/EstimateRefiner.swift.o",
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/FoodDatabase.swift.o",
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/Insights.swift.o",
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/MealStore.swift.o",
@@ -136,6 +141,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/EstimateRefiner.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/FoodDatabase.swift.o"
         },
         {
@@ -163,6 +172,7 @@
       "sources" : [
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/AnalysisEngine.swift",
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/CopyDeck.swift",
+        "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/EstimateRefiner.swift",
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/FoodDatabase.swift",
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/Insights.swift",
         "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/MealStore.swift",
@@ -183,6 +193,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Tests/CarbLensCoreTests/EstimateRefinerTests.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
@@ -198,7 +212,8 @@
       "moduleName" : "CarbLensCoreTests",
       "moduleOutputPath" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/Modules/CarbLensCoreTests.swiftmodule",
       "objects" : [
-        "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCoreTests.build/CarbLensCoreTests.swift.o"
+        "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCoreTests.build/CarbLensCoreTests.swift.o",
+        "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCoreTests.build/EstimateRefinerTests.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -256,12 +271,17 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCoreTests.build/EstimateRefinerTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/Modules/CarbLensCoreTests.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Tests/CarbLensCoreTests/CarbLensCoreTests.swift"
+        "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Tests/CarbLensCoreTests/CarbLensCoreTests.swift",
+        "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Tests/CarbLensCoreTests/EstimateRefinerTests.swift"
       ],
       "tempsPath" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCoreTests.build",
       "wholeModuleOptimization" : false
@@ -375,6 +395,7 @@
       "-c",
       "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/AnalysisEngine.swift",
       "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/CopyDeck.swift",
+      "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/EstimateRefiner.swift",
       "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/FoodDatabase.swift",
       "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/Insights.swift",
       "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/MealStore.swift",
@@ -440,6 +461,7 @@
       "product",
       "-c",
       "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Tests/CarbLensCoreTests/CarbLensCoreTests.swift",
+      "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Tests/CarbLensCoreTests/EstimateRefinerTests.swift",
       "-I",
       "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/Modules",
       "-target",
@@ -603,6 +625,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/EstimateRefiner.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Sources/CarbLensCore/FoodDatabase.swift"
         },
         {
@@ -634,6 +660,10 @@
         {
           "kind" : "file",
           "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Tests/CarbLensCoreTests/CarbLensCoreTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/Tests/CarbLensCoreTests/EstimateRefinerTests.swift"
         }
       ],
       "outputFilePath" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCoreTests.build/sources"
@@ -669,6 +699,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/EstimateRefiner.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCore.build/FoodDatabase.swift.o"
         },
         {
@@ -690,6 +724,10 @@
         {
           "kind" : "file",
           "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCoreTests.build/CarbLensCoreTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/wangrenzhu/work/AI-Infra/app-factory-command-center/.worktrees/kimi/app-factory-batch/kimi_app_factory/runs/kf-20260719T113137Z-b5a72925/product/.build/arm64-apple-macosx/debug/CarbLensCoreTests.build/EstimateRefinerTests.swift.o"
         },
         {
           "kind" : "file",
