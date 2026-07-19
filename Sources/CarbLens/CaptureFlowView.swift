@@ -136,8 +136,8 @@ struct CaptureFlowView: View {
                         .secondaryButtonStyle()
                 }
                 .accessibilityLabel(Text(Copy.Capture.retake))
-                Button(action: { Task { await session.analyze() } }) {
-                    Text(Copy.Capture.usePhoto)
+                Button(action: analyzePhoto) {
+                    Label(Copy.Capture.usePhoto, systemImage: "sparkles")
                         .primaryButtonStyle()
                 }
                 .accessibilityLabel(Text(Copy.Capture.usePhoto))
@@ -161,6 +161,10 @@ struct CaptureFlowView: View {
                 }
             )
         }
+    }
+
+    private func analyzePhoto() {
+        Task { await session.analyze() }
     }
 
     // MARK: - Failure (REQ-AI-03)

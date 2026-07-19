@@ -48,7 +48,7 @@ public enum Copy {
         public static let title = "Snap your meal"
         public static let takePhoto = "Take photo"
         public static let choosePhoto = "Choose from library"
-        public static let usePhoto = "Use this photo"
+        public static let usePhoto = "Analyze this photo"
         public static let retake = "Retake"
         public static let analyzing = "Analyzing your meal…"
         public static let cameraDeniedTitle = "Camera access is off"
