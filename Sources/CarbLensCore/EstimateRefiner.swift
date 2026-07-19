@@ -238,10 +238,9 @@ public struct RefiningMealAnalyzer: MealAnalyzer {
     }
 }
 
-/// Composes the AI refinement path with the deterministic on-device baseline.
-/// Any refinement failure (offline, service unavailable, malformed response)
-/// falls back to the on-device estimate so the capture flow always completes;
-/// the manual log remains available throughout.
+/// Keeps the AI analysis flow honest about unavailable refinement. The capture
+/// UI presents retry and manual logging rather than presenting an offline
+/// failure as an AI-generated estimate.
 public struct FallbackMealAnalyzer: MealAnalyzer {
     public var analyzerVersion: String { "\(primary.analyzerVersion)+\(fallback.analyzerVersion)" }
 
@@ -259,7 +258,7 @@ public struct FallbackMealAnalyzer: MealAnalyzer {
         } catch let error as AnalysisError {
             switch error {
             case .serviceUnavailable:
-                return try await fallback.analyze(photo: photo)
+                throw error
             case .imageUnreadable, .lowConfidence:
                 throw error
             }

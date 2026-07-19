@@ -86,6 +86,7 @@ public final class AppViewModel: ObservableObject {
     @Published public var toast: String?
     @Published public var showingPaywall = false
     @Published public var paywallReason: String?
+    @Published public var selectedTab = 0
 
     private let analyzer: MealAnalyzer
 
@@ -114,10 +115,12 @@ public final class AppViewModel: ObservableObject {
     }
 
     /// Confirmation gate: only here does an estimate become a MealLog entry.
-    public func confirmEstimate(_ editable: EditableEstimate) {
-        guard let data = captureSession.originalPhoto else { return }
+    /// The review stays open after a failed write so the user can retry safely.
+    @discardableResult
+    public func confirmEstimate(_ editable: EditableEstimate) -> Bool {
+        guard let data = captureSession.originalPhoto else { return false }
         let thumbRef = CaptureSession.makeThumbnailRef()
-        // Compress the thumbnail; the original is discarded immediately after.
+        // Compress the thumbnail; the original is discarded immediately after a successful save.
         #if canImport(UIKit)
         if let image = UIImage(data: data),
            let thumb = image.jpegData(compressionQuality: 0.3) {
@@ -125,12 +128,15 @@ public final class AppViewModel: ObservableObject {
         }
         #endif
         let meal = editable.confirmedMeal(thumbnailLocalRef: thumbRef)
-        captureSession.discardOriginalPhoto()
         do {
             _ = try mealStore.save(meal)
+            captureSession.discardOriginalPhoto()
             toast = Copy.Common.savedToast
+            selectedTab = 1
+            return true
         } catch {
             toast = Copy.Errors.saveFailed
+            return false
         }
     }
 
@@ -176,6 +182,8 @@ public final class AppViewModel: ObservableObject {
 
     public func deleteAllData() throws {
         try mealStore.deleteAll()
+        try profileStore.reset()
+        subscriptionStore.resetLocalData()
     }
 }
 

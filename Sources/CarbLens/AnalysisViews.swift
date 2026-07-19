@@ -131,15 +131,18 @@ struct AnalysisReviewView: View {
     }
 
     private var confirmButton: some View {
-        Button(action: {
-            viewModel.confirmEstimate(editable)
-            isPresented = false
-        }) {
+        Button(action: confirmEstimate) {
             Text(Copy.Analysis.confirmSave)
                 .primaryButtonStyle()
         }
         .accessibilityLabel(Text(Copy.Accessibility.confirmEstimate))
         .disabled(editable.items.isEmpty)
+    }
+
+    private func confirmEstimate() {
+        if viewModel.confirmEstimate(editable) {
+            isPresented = false
+        }
     }
 }
 

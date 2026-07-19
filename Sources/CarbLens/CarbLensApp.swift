@@ -43,11 +43,10 @@ struct RootView: View {
 struct MainTabView: View {
     @EnvironmentObject private var viewModel: AppViewModel
     @State private var showingCapture = false
-    @State private var selection = 0
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            TabView(selection: $selection) {
+            TabView(selection: $viewModel.selectedTab) {
                 NavigationView { HomeView(onSnap: { showingCapture = true }) }
                     .navigationViewStyle(StackNavigationViewStyle())
                     .tabItem { Label("Today", systemImage: "house") }
@@ -72,7 +71,7 @@ struct MainTabView: View {
             .accentColor(Theme.teal)
 
             // Persistent center camera affordance on the Today tab.
-            if selection == 0 {
+            if viewModel.selectedTab == 0 {
                 Button(action: { showingCapture = true }) {
                     Image(systemName: "camera.fill")
                         .font(.title2)

@@ -130,17 +130,22 @@ final class EstimateRefinerTests: XCTestCase {
         }
     }
 
-    // MARK: - On-device fallback (REQ-AI-03)
+    // MARK: - Unavailable AI recovery (REQ-AI-03)
 
-    func testFallbackAnalyzerUsesOnDeviceEstimateWhenRefinementUnavailable() async throws {
+    func testFallbackAnalyzerPreservesServiceUnavailableForManualRecovery() async {
         let transport = StubTransport(response: .failure(StubTransport.StubError()))
         let analyzer = FallbackMealAnalyzer(
             primary: RefiningMealAnalyzer(transport: transport),
             fallback: HeuristicMealAnalyzer()
         )
-        let estimate = try await analyzer.analyze(photo: makePhoto())
-        XCTAssertEqual(estimate.analyzerVersion, HeuristicMealAnalyzer().analyzerVersion)
-        XCTAssertFalse(estimate.items.isEmpty)
+        do {
+            _ = try await analyzer.analyze(photo: makePhoto())
+            XCTFail("expected serviceUnavailable")
+        } catch let error as AnalysisError {
+            XCTAssertEqual(error, .serviceUnavailable)
+        } catch {
+            XCTFail("unexpected error \(error)")
+        }
     }
 
     // MARK: - Editable + confirm chain with AI output (REQ-AI-02, REQ-LOG-01)

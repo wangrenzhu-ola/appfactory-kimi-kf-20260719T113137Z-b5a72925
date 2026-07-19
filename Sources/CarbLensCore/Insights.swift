@@ -130,6 +130,12 @@ public final class ProfileStore: ObservableObject {
         profile = copy
     }
 
+    public func reset() throws {
+        let defaultProfile = UserProfile()
+        try persist(defaultProfile)
+        profile = defaultProfile
+    }
+
     private func persist(_ value: UserProfile) throws {
         do {
             try FileManager.default.createDirectory(at: fileURL.deletingLastPathComponent(), withIntermediateDirectories: true)

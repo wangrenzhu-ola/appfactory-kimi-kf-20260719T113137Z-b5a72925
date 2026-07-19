@@ -247,6 +247,16 @@ public final class SubscriptionStore: ObservableObject {
         return updated
     }
 
+    /// Clears only locally persisted app data after the user confirms Delete all data.
+    /// StoreKit ownership remains with Apple and is not modified here.
+    public func resetLocalData(now: Date = Date()) {
+        entitlement = SubscriptionEntitlement()
+        quota = ScanQuota(date: calendar.startOfDay(for: now))
+        products = []
+        try? FileManager.default.removeItem(at: quotaURL)
+        try? FileManager.default.removeItem(at: entitlementURL)
+    }
+
     private struct ScanQuotaCodable: Codable {
         var date: Date
         var usedScans: Int
