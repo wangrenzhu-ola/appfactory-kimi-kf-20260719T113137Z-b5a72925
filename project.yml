@@ -3,22 +3,24 @@ options:
   bundleIdPrefix: com.carblens
   createIntermediateGroups: true
   deploymentTarget:
-    iOS: "15.0"
+    iOS: "14.0"
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    IPHONEOS_DEPLOYMENT_TARGET: "15.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "14.0"
 targets:
   CarbLens:
     type: application
     platform: iOS
-    deploymentTarget: "15.0"
+    deploymentTarget: "14.0"
     sources:
       - path: Sources
       - path: Assets.xcassets
       - path: PrivacyInfo.xcprivacy
     info:
       path: Support/Info.plist
+      properties:
+        NSCameraUsageDescription: CarbLens uses your camera to estimate carbohydrates from a meal photo.
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.carblens.app
@@ -27,8 +29,24 @@ targets:
         GENERATE_INFOPLIST_FILE: NO
         TARGETED_DEVICE_FAMILY: "1"
         SWIFT_VERSION: "5.0"
-        IPHONEOS_DEPLOYMENT_TARGET: "15.0"
+        IPHONEOS_DEPLOYMENT_TARGET: "14.0"
         CODE_SIGN_STYLE: Automatic
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
+  CarbLensAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: Tests/CarbLensAppTests
+    dependencies:
+      - target: CarbLens
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.carblens.app.tests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.0"
+        IPHONEOS_DEPLOYMENT_TARGET: "14.0"
         CODE_SIGNING_ALLOWED: NO
         CODE_SIGNING_REQUIRED: NO
 schemes:
@@ -40,3 +58,5 @@ schemes:
       config: Debug
     test:
       config: Debug
+      targets:
+        - CarbLensAppTests

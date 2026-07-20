@@ -30,9 +30,20 @@
 		CCF1D37C2B3F3ACEAF49C974 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EC098BCD97E29A3A103FD2 /* Models.swift */; };
 		CF67333B260C41B8827DEA47 /* HomeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF9A8E0B73ECE67B8C6573 /* HomeViews.swift */; };
 		D3696445C04198CC9C0435AB /* CarbLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574AB1E8C78AABC2313C631 /* CarbLensApp.swift */; };
+		EA1B2FBEC28B1A9C78A1414F /* CarbLensAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69C76E3E5A13B409E7118F5 /* CarbLensAppTests.swift */; };
 		F9C6C576AE440957F4060903 /* AnalysisViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC67558CE6677806F162CE1 /* AnalysisViews.swift */; };
 		FCDDCD06BD54ECFFFD694810 /* CaptureFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4875987BC3AC7740F30108 /* CaptureFlowView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0BA0102C115E0901D03788D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5016AA5D9F41B223F3DAEB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71FA53B871E58AB8BA0C033C;
+			remoteInfo = CarbLens;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		142CC8389F0B14A6BCC00955 /* CodingAnalysisTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingAnalysisTransport.swift; sourceTree = "<group>"; };
@@ -57,9 +68,11 @@
 		CE4875987BC3AC7740F30108 /* CaptureFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureFlowView.swift; sourceTree = "<group>"; };
 		CEB74AEA801774A39813A1B2 /* Envelope7240f0120f29.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Envelope7240f0120f29.swift; sourceTree = "<group>"; };
 		D3A96B3400B3071884083D3A /* Insights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insights.swift; sourceTree = "<group>"; };
+		D4185A80AC9C02BB33488117 /* CarbLensAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CarbLensAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EF9A8E0B73ECE67B8C6573 /* HomeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViews.swift; sourceTree = "<group>"; };
 		EAC67558CE6677806F162CE1 /* AnalysisViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViews.swift; sourceTree = "<group>"; };
 		F0EC098BCD97E29A3A103FD2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F69C76E3E5A13B409E7118F5 /* CarbLensAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbLensAppTests.swift; sourceTree = "<group>"; };
 		FCB5B9ADE43929FBF39EBA7E /* CodingClientc9461aeb6987.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingClientc9461aeb6987.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +98,7 @@
 				2709E1D9F7BD9B8A37DFD5EF /* Assets.xcassets */,
 				B3B7911B7B132724140A2259 /* PrivacyInfo.xcprivacy */,
 				4D3E8A742ACD35657399B004 /* Sources */,
+				7C226C08FE9FF3EC7B021775 /* Tests */,
 				893C61A260376DE01851FF11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,17 +134,52 @@
 			path = CarbLens;
 			sourceTree = "<group>";
 		};
+		7C226C08FE9FF3EC7B021775 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AA92318B7080F362595C0263 /* CarbLensAppTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		893C61A260376DE01851FF11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				3B37E83BCB37A9021F090DC0 /* CarbLens.app */,
+				D4185A80AC9C02BB33488117 /* CarbLensAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AA92318B7080F362595C0263 /* CarbLensAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F69C76E3E5A13B409E7118F5 /* CarbLensAppTests.swift */,
+			);
+			path = CarbLensAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3C383F691AD82FE3CB8804BC /* CarbLensAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255697A2552DD7FFB2ED1659 /* Build configuration list for PBXNativeTarget "CarbLensAppTests" */;
+			buildPhases = (
+				D2272BF6BD04407A4F64A9A6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B168C8E403F6AAB302E42A6 /* PBXTargetDependency */,
+			);
+			name = CarbLensAppTests;
+			packageProductDependencies = (
+			);
+			productName = CarbLensAppTests;
+			productReference = D4185A80AC9C02BB33488117 /* CarbLensAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		71FA53B871E58AB8BA0C033C /* CarbLens */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82FA5791230396F1720B32B0 /* Build configuration list for PBXNativeTarget "CarbLens" */;
@@ -154,15 +203,6 @@
 /* Begin PBXProject section */
 		F5016AA5D9F41B223F3DAEB5 /* Project object */ = {
 			isa = PBXProject;
-			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-					71FA53B871E58AB8BA0C033C = {
-						ProvisioningStyle = Automatic;
-					};
-				};
-			};
 			buildConfigurationList = 8EC81B168A878E54B0448754 /* Build configuration list for PBXProject "CarbLens" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -178,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				71FA53B871E58AB8BA0C033C /* CarbLens */,
+				3C383F691AD82FE3CB8804BC /* CarbLensAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +236,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D2272BF6BD04407A4F64A9A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1B2FBEC28B1A9C78A1414F /* CarbLensAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA90017E7B2995913B526B45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +276,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6B168C8E403F6AAB302E42A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71FA53B871E58AB8BA0C033C /* CarbLens */;
+			targetProxy = F0BA0102C115E0901D03788D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		20D22C0A3FB4E7D9221F5979 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -238,7 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Support/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -248,6 +305,27 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		724F20E2404B00324471508E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carblens.app.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbLens.app/CarbLens";
 			};
 			name = Debug;
 		};
@@ -261,7 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Support/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -271,6 +349,27 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A1FDD31DBDEA6B3206B41EA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carblens.app.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbLens.app/CarbLens";
 			};
 			name = Release;
 		};
@@ -325,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -382,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,6 +495,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		255697A2552DD7FFB2ED1659 /* Build configuration list for PBXNativeTarget "CarbLensAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724F20E2404B00324471508E /* Debug */,
+				A1FDD31DBDEA6B3206B41EA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		82FA5791230396F1720B32B0 /* Build configuration list for PBXNativeTarget "CarbLens" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

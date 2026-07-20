@@ -39,6 +39,17 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3C383F691AD82FE3CB8804BC"
+               BuildableName = "CarbLensAppTests.xctest"
+               BlueprintName = "CarbLensAppTests"
+               ReferencedContainer = "container:CarbLens.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <CommandLineArguments>
       </CommandLineArguments>
